@@ -1,6 +1,6 @@
 ﻿# Prueba técnica SLC
 
-Análisis de ventas e inventario del 1 al 21 de agosto de 2026. La revisión inicial y las partes A y B están desarrolladas. C y el resumen ejecutivo están pendientes.
+Análisis de ventas e inventario del 1 al 21 de agosto de 2026. La revisión inicial y las partes A, B y C están desarrolladas. El resumen ejecutivo está pendiente.
 
 ## Ejecución
 
@@ -64,3 +64,14 @@ Abrir también analisis_a.ipynb y analisis_b.ipynb desde Prueba_C.E/Respuestas. 
 - B5 presenta tres acciones con montos del notebook. Reposición estimada, inventario a revisar y pérdida observada no se suman como ahorro.
 
 Se usa el inventario observado al 21, sin arrastrar el último dato anterior. Los detalles y las limitaciones están en cada notebook.
+
+## Actualización de la Parte C
+
+Ejecutar analisis_c.ipynb desde Prueba_C.E/Respuestas, con las celdas en orden. Carga sus propios datos y genera predicciones.csv. Las tablas de apoyo y la gráfica quedan en resultados/.
+
+- Se usan ventas e inventario hasta el 21 de agosto. El objetivo es detectar si el stock baja a la mitad o menos durante la semana siguiente.
+- Se comparan regresión logística y un árbol pequeño con ocho variables. Se separa por SKU en entrenamiento, validación y prueba.
+- El árbol con umbral 0.10 tiene el menor costo en validación. En prueba detecta 11 de 14 eventos, con 32 falsas alertas y costo de Q9,300.
+- Hay pocos casos positivos y solo un corte de datos. El resultado no demuestra que funcione igual en otras semanas.
+
+El archivo de entrega tiene las 392 combinaciones, con id_combo, probabilidad y alerta. Los tres notebooks se ejecutaron por separado y los CSV se reprodujeron sin cambios. Sigue pendiente comprobar una instalación desde cero.

@@ -1,0 +1,3 @@
+modelo,umbral,eventos_detectados,eventos_no_alertados,falsas_alertas,costo_gtq
+Arbol de decision,0.1,15,3,33,9450
+Regresion logistica,0.06296788998763557,18,0,77,11550

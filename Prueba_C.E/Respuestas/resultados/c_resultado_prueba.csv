@@ -1,0 +1,2 @@
+modelo,umbral,filas,positivos_reales,eventos_detectados,eventos_no_alertados,falsas_alertas,precision,recall,precision_promedio,costo_gtq
+Arbol de decision,0.1,179,14,11,3,32,0.2558139534883721,0.7857142857142857,0.24826491501819553,9300

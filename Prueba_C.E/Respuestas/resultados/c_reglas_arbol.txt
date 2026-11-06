@@ -1,0 +1,16 @@
+|--- stock_21 <= 3.50
+|   |--- unidades_21_dias <= 2.50
+|   |   |--- stock_21 <= 1.50
+|   |   |   |--- class: 0
+|   |   |--- stock_21 >  1.50
+|   |   |   |--- class: 0
+|   |--- unidades_21_dias >  2.50
+|   |   |--- class: 0
+|--- stock_21 >  3.50
+|   |--- variacion_stock_7_pct <= -32.88
+|   |   |--- class: 0
+|   |--- variacion_stock_7_pct >  -32.88
+|   |   |--- variacion_stock_7_pct <= 20.48
+|   |   |   |--- class: 0
+|   |   |--- variacion_stock_7_pct >  20.48
+|   |   |   |--- class: 0

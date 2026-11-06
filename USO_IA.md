@@ -20,4 +20,12 @@ Recibí asistencia para revisar consultas SQL, código pandas, gráficos, docume
 
 Durante la revisión se distinguieron documentos de líneas, se corrigió la propuesta de eliminar filas solo por cantidad cero y se separó el SKU N/A. Las repeticiones entre grupos de inventario se conservaron y los costos faltantes no se sustituyeron por cero.
 
-Las tareas que figuraban pendientes en la etapa inicial avanzaron con esta asistencia. Los supuestos están en el README y los notebooks. La Parte C y el resumen ejecutivo siguen pendientes.
+Las tareas que figuraban pendientes en la etapa inicial avanzaron con esta asistencia. Los supuestos están en el README y los notebooks. En ese momento, la Parte C y el resumen ejecutivo seguían pendientes.
+
+## Actualización de la Parte C
+
+Discutí con IA qué variables construir con ventas e inventario, cómo separar los datos y cómo comparar una regresión logística con un árbol pequeño. Recibí apoyo para generar y ajustar código, resolver errores y comprobar el cálculo del costo y el formato de predicciones.csv.
+
+Durante la revisión se aclaró que el objetivo incluye bajar a la mitad del stock, no solo agotarlo. Se ajustaron las explicaciones y se distinguió la clase que muestra el árbol de las alertas calculadas con el umbral 0.10. También se revisó que la prueba no se usara para elegir el modelo ni el umbral.
+
+Las decisiones y limitaciones quedaron en el notebook. El resumen ejecutivo sigue pendiente.
