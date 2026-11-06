@@ -13,3 +13,11 @@ Como revisión de la configuración, se identificó una contraseña fija pendien
 ## Exploración inicial
 
 Consulté IA para aclarar dudas de pandas, discutir relaciones entre tablas y revisar posibles tratamientos de datos faltantes y duplicados. Usé sus comentarios como referencia para continuar el análisis. También recibí ejemplos de código y apoyo para resumir la documentación y preparar las dependencias.
+
+## Actualización de las partes A y B
+
+Recibí asistencia para revisar consultas SQL, código pandas, gráficos, documentación y se corrigieron errores de ejecución.
+
+Durante la revisión se distinguieron documentos de líneas, se corrigió la propuesta de eliminar filas solo por cantidad cero y se separó el SKU N/A. Las repeticiones entre grupos de inventario se conservaron y los costos faltantes no se sustituyeron por cero.
+
+Las tareas que figuraban pendientes en la etapa inicial avanzaron con esta asistencia. Los supuestos están en el README y los notebooks. La Parte C y el resumen ejecutivo siguen pendientes.
