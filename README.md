@@ -1,10 +1,10 @@
-﻿# Prueba técnica SLC
+# Prueba técnica SLC
 
 Análisis de ventas e inventario del 1 al 21 de agosto de 2026. La revisión inicial y las partes A, B y C están desarrolladas. El resumen ejecutivo está pendiente.
 
 ## Ejecución
 
-Con Python 3.12, instalar las dependencias desde `Prueba_C.E/Respuestas`:
+Con Python 3.12, instalar las dependencias desde `Respuestas`:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -12,7 +12,7 @@ python -m pip install -r requirements.txt
 
 Abrir `analisis.ipynb` en VS Code con la extensión Jupyter, seleccionar el entorno donde se instalaron las dependencias y ejecutar las celdas en orden. Los datos se leen de `../datos`. Queda pendiente comprobar la ejecución en un entorno nuevo.
 
-Para cargar los datos originales en SQL Server, desde `Prueba_C.E/Respuestas`:
+Para cargar los datos originales en SQL Server, desde `Respuestas`:
 
 ```powershell
 python preparar_importacion.py
@@ -31,7 +31,7 @@ En DBeaver, ejecutar `import.sql` completo como script (Alt+X) con la conexión 
 - `GT1CEDI` no tiene registros del 15 al 17 de agosto. `GT2COMER` solo tiene una fila el 20 de agosto.
 - Inventario tiene 246 repeticiones de la clave candidata, pero los ejemplos difieren en grupo, stock y costo. Todavía no se consideran filas sobrantes.
 
-El detalle y los conteos están en [analisis.ipynb](Prueba_C.E/Respuestas/analisis.ipynb).
+El detalle y los conteos están en [analisis.ipynb](Respuestas/analisis.ipynb).
 
 ## Criterios
 
@@ -42,7 +42,7 @@ El detalle y los conteos están en [analisis.ipynb](Prueba_C.E/Respuestas/analis
 
 ## Actualización de las partes A y B
 
-Abrir también analisis_a.ipynb y analisis_b.ipynb desde Prueba_C.E/Respuestas. Cada notebook carga sus propios datos. Las tablas y gráficas de B se guardan en resultados/. B se ejecutó desde un kernel nuevo, pero falta comprobar la entrega en un entorno instalado desde cero.
+Abrir también analisis_a.ipynb y analisis_b.ipynb desde Respuestas. Cada notebook carga sus propios datos. Las tablas y gráficas de B se guardan en resultados/. B se ejecutó desde un kernel nuevo, pero falta comprobar la entrega en un entorno instalado desde cero.
 
 ### Otros hallazgos
 
@@ -67,7 +67,7 @@ Se usa el inventario observado al 21, sin arrastrar el último dato anterior. Lo
 
 ## Actualización de la Parte C
 
-Ejecutar analisis_c.ipynb desde Prueba_C.E/Respuestas, con las celdas en orden. Carga sus propios datos y genera predicciones.csv. Las tablas de apoyo y la gráfica quedan en resultados/.
+Ejecutar analisis_c.ipynb desde Respuestas, con las celdas en orden. Carga sus propios datos y genera predicciones.csv. Las tablas de apoyo y la gráfica quedan en resultados/.
 
 - Se usan ventas e inventario hasta el 21 de agosto. El objetivo es detectar si el stock baja a la mitad o menos durante la semana siguiente.
 - Se comparan regresión logística y un árbol pequeño con ocho variables. Se separa por SKU en entrenamiento, validación y prueba.
