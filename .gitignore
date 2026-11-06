@@ -31,6 +31,7 @@ Desktop.ini
 *.swo
 
 # Local logs and SQL Server runtime files
+.sql-import/
 *.log
 *.mdf
 *.ndf

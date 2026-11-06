@@ -12,6 +12,15 @@ python -m pip install -r requirements.txt
 
 Abrir `analisis.ipynb` en VS Code con la extensión Jupyter, seleccionar el entorno donde se instalaron las dependencias y ejecutar las celdas en orden. Los datos se leen de `../datos`. Queda pendiente comprobar la ejecución en un entorno nuevo.
 
+Para cargar los datos originales en SQL Server, desde `Prueba_C.E/Respuestas`:
+
+```powershell
+python preparar_importacion.py
+docker compose cp .sql-import sqlserver:/var/opt/mssql/import
+```
+
+En DBeaver, ejecutar `import.sql` completo como script (Alt+X) con la conexión de SQL Server. Crea `slc_prueba` y carga las once tablas sin limpieza ni claves foráneas. Se detiene si alguna tabla ya existe. Los JSON temporales quedan fuera de Git. Los campos flotantes se conservan como `FLOAT` en staging; el tratamiento monetario se definirá en el análisis.
+
 ## Observaciones iniciales
 
 - Hay líneas de factura y notas de crédito sin producto, bodega o ubicación. Se mantienen mientras se investiga su tratamiento.
